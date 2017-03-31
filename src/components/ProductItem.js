@@ -19,7 +19,8 @@ const ProductItem = (props) => {
 ProductItem.propTypes = {
     name: PropTypes.string.isRequired,
     cost: PropTypes.number.isRequired,
-    image: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired,
+    onClick: PropTypes.func
 }
 
 export default ProductItem;

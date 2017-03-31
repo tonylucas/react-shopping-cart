@@ -14,7 +14,8 @@ const ProductItem = (props) => {
 
 ProductItem.propTypes = {
     name: PropTypes.string.isRequired,
-    complete: PropTypes.bool,
+    cost: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
     onClick: PropTypes.func
 }
 

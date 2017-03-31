@@ -6,7 +6,6 @@ import React, {Component} from 'react';
 function mapDispatchToProps(dispatch) {
     return {
         fetchComplete: (products) => {
-            console.log(products);
             dispatch({
                 type: 'FETCH_PRODUCTS_SUCCESS',
                 products
@@ -28,12 +27,6 @@ function mapDispatchToProps(dispatch) {
             dispatch({
                 type: 'ADD_PRODUCT',
                 name
-            });
-        },
-        filterProduct: (value) => {
-            dispatch({
-                type: 'SET_VISIBILITY_FILTER',
-                value
             });
         }
     }
@@ -60,8 +53,7 @@ function fetchProducts(WrappedComponent) {
 
 function mapStateToProps(state) {
     return {
-        products: state.products,
-        filter: state.filter
+        products: state.products
     }
 }
 

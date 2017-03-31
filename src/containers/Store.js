@@ -7,7 +7,6 @@ import CartList from "../components/CartList";
 export default class Store extends Component {
 
     constructor(props) {
-        console.log("props", props);
         super(props);
         this.selectFilter = this.selectFilter.bind(this);
     }
@@ -20,7 +19,7 @@ export default class Store extends Component {
         return (
             <div className="row">
                 <ProductList products={this.props.products} selectItem={this.props.onProductClick} />
-                
+                <CartList items={this.props.items} />
             </div>
         );
 
