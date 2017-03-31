@@ -1,0 +1,10 @@
+.added-to-cart {
+    background-color: #acacac;
+}
+
+.filterSelected {
+    background-color: #CCC;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
